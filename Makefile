@@ -60,6 +60,9 @@ shell:
 deploy:
 	sls deploy
 
+deploy-eu:
+	sls deploy --region eu-central-1
+
 clean:
 	docker stop lambda
 	docker rm lambda
